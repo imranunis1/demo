@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="my digital clock">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Digital Days </title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="angular.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="clcok.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+<body>
+
+        <h1><u>Next Date.</u></h1>
+        <h3>You  forgot, but we have remember!</h3>
+
+
+
+
+<div ng-controller="ClockCtrl">
+           <h2><u>{{timeStamp()}}</u></h2>
+            <span ng-bind-html="html"></span></div>
+
+            <form>
+                <h7>Put Here:</h7><input type="text" id="DaysToAdd" size=" " value="" ><br>
+                <input type="text" id="display" name="display" size="40" value=""><br>
+                <input type="button" value="Next Day" onClick="futDate()">
+                <input type="button" value="Previous Day" onClick="pastDate()">
+                <input type="button" value="Next Week" onClick="futWeek()">
+                <input type="button" value="Previous Week" onClick="pastWeek()">
+
+            </form>
+
+</body>
+</html>
